@@ -11,10 +11,13 @@ pipeline {
         stage('Build') {
             steps {
                 bat "javac MessageUtil.java"
-		bat "javac TestJUnit.java"
-		bat "javac TestRunner.java"
             }
         }
+	stage('Test') {
+	    steps {
+	        //
+	    }
+	}
     }
 } 
 
